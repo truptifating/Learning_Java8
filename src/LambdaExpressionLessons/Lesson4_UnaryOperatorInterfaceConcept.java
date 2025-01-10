@@ -15,13 +15,13 @@ public class Lesson4_UnaryOperatorInterfaceConcept {
 		public interface UnaryOperator<T>
 		extends Function<T,T> */
 		
-		//Represents an operation upon two operands of the same type, producing a result of the same type as the operands. 
-		//This is a specialization of BiFunction for the case where the operands and the result are all of the same type.
-	
+		//Represents an operation on a single operand that produces a result of the same type as its operand. 
+		//This is a specialization of Function for the case where the operand and result are of the same type.
 		UnaryOperator<Integer> func = x -> x*7;
 		int result= func.apply(10);
 		System.out.println(result);
 		
+		//Applying on ArrayList
 		ArrayList<String> al= new ArrayList<String>();
 		al.add("Java");
 		al.add("Ruby");
